@@ -1,0 +1,48 @@
+jshell> int number = (10 + 5) + (2 * 10);
+number ==> 35
+
+jshell> int number3 = 12
+number3 ==> 12
+
+jshell> int number2 = 6
+number2 ==> 6
+
+jshell> /list
+
+   1 : int number = (10 + 5) + (2 * 10);
+   2 : int number3 = 12;
+   3 : int number2 = 6;
+
+jshell> /var
+|    int number = 35
+|    int number3 = 12
+|    int number2 = 6
+
+jshell> int sum = number + number3 + number2;
+sum ==> 53
+
+jshell> number2 = numer * number3
+|  Error:
+|  cannot find symbol
+|    symbol:   variable numer
+|  number2 = numer * number3
+|            ^---^
+
+jshell> number2 = number * number3
+number2 ==> 420
+
+jshell> sum = number + number3 + number2;
+sum ==> 467
+
+jshell> /var
+|    int number = 35
+|    int number3 = 12
+|    int number2 = 420
+|    int sum = 467
+
+jshell> int lastOne = 1000 - sum
+lastOne ==> 533
+
+jshell> System.out.print(lastOne)
+533
+
