@@ -1,0 +1,27 @@
+jshell> int RandomNumber = 5;
+RandomNumber ==> 5
+
+jshell> System.out.print(RandomNumber)
+5
+jshell> RandomNumber = 10
+RandomNumber ==> 10
+
+jshell> System.out.print(RandomNumber)
+10
+jshell> RandomNumber = 1000
+RandomNumber ==> 1000
+
+jshell> System.out.print(RandomNumber)
+1000
+jshell> /list
+
+   1 : System.out.print("Hello World")
+   2 : System.out.print("Hello Tim")
+   3 : System.out.print("Hello Tim");
+   4 : int RandomNumber = 5;
+   5 : System.out.print(RandomNumber)
+   6 : RandomNumber = 10
+   7 : System.out.print(RandomNumber)
+   8 : RandomNumber = 1000
+   9 : System.out.print(RandomNumber)
+
