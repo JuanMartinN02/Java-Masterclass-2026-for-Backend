@@ -1,0 +1,65 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> /var
+
+jshell> int value = 1000;
+value ==> 1000
+
+jshell> int minIntValue = Integer.MIN_VALUE;
+minIntValue ==> -2147483648
+
+jshell> int maxIntValue = Integer.MAX_VALUE;
+maxIntValue ==> 2147483647
+
+jshell> /var
+|    int value = 1000
+|    int minIntValue = -2147483648
+|    int maxIntValue = 2147483647
+
+jshell> Sistem.out.print("Int min value = " + minIntValue);
+|  Error:
+|  package Sistem does not exist
+|  Sistem.out.print("Int min value = " + minIntValue);
+|  ^--------^
+
+jshell> System.out.print("Int min value = " + minIntValue);
+Int min value = -2147483648
+jshell> System.out.print("Int value range (" + ^[[200~Integer.MIN_VALUE[201~);
+[1]+  Stopped                 jshell
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> System.out.print("Int value range (" + Integer.MIN_VALUE + " ; " + Integer.MAX_VALUE + ")")
+Int value range (-2147483648 ; 2147483647)
+jshell> int intMaxVal = Interger.MAX_VALUE;
+|  Error:
+|  cannot find symbol
+|    symbol:   variable Interger
+|  int intMaxVal = Interger.MAX_VALUE;
+|                  ^------^
+
+jshell> int intMaxVal = Integer.MAX_VALUE;
+intMaxVal ==> 2147483647
+
+jshell> System.out.print("Busted Max value = " + (intMaxVal + 1))
+Busted Max value = -2147483648
+jshell> System.out.print("Busted Max value = " + (intMaxVal + 1) + "<== This is and overflow")
+Busted Max value = -2147483648<== This is and overflow
+jshell> System.out.print("Busted Max value = " + (intMaxVal + 1) + " <== This is and overflow")
+Busted Max value = -2147483648 <== This is and overflow
+jshell> int intMinVal = Integer.MIN_VALUE;
+intMinVal ==> -2147483648
+
+jshell> System.out.print("Busted Min value = " + (intMinVal - 1) + " <== This is an underflow")
+Busted Min value = 2147483647 <== This is an underflow
+jshell> int intMinVal = Integer.MIN_VALUE - 1;
+intMinVal ==> 2147483647
+
+jshell> int intMinVal = -2147483650;
+|  Error:
+|  integer number too large
+|  int intMinVal = -2147483650;
+|           
