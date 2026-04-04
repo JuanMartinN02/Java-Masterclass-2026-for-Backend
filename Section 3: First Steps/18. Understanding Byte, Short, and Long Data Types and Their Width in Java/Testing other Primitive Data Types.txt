@@ -1,0 +1,60 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> System.out.println("test")
+test
+
+jshell> System.out.println("Byte Value Range: (" + Byte.MIN_VALUE + " ; " + Byte.MAX_VALUE + ")" )
+Byte Value Range: (-128 ; 127)
+
+jshell> System.out.println("Short Value Range: (" + Short.MIN_VALUE + " ; " + Short.MAX_VALUE + ")" )
+Short Value Range: (-32768 ; 32767)
+
+jshell> System.out.println("Float Value Range: (" + Float.MIN_VALUE + " ; " + FLoat.MAX_VALUE + ")" )
+|  Error:
+|  cannot find symbol
+|    symbol:   variable FLoat
+|  System.out.println("Float Value Range: (" + Float.MIN_VALUE + " ; " + FLoat.MAX_VALUE + ")" )
+|                                                                        ^---^
+
+jshell> System.out.println("Float Value Range: (" + Float.MIN_VALUE + " ; " + Float.MAX_VALUE + ")" )
+Float Value Range: (1.4E-45 ; 3.4028235E38)
+
+jshell> System.out.println("Float Size: " + Float.SIZE )
+Float Size: 32
+
+jshell> System.out.println("Int Size: " + Int.SIZE )
+|  Error:
+|  cannot find symbol
+|    symbol:   variable Int
+|  System.out.println("Int Size: " + Int.SIZE )
+|                                    ^-^
+
+jshell> System.out.println("Int Size: " + Integer.SIZE )
+Int Size: 32
+
+jshell> System.out.println("Byte Size: " + Byte.SIZE )
+Byte Size: 8
+
+jshell> System.out.println("Short Size: " + Short.SIZE )
+Short Size: 16
+
+jshell> System.out.println("Long Size: " + Long.SIZE )
+Long Size: 64
+
+jshell> System.out.println("Long Value Range: (" + Long.MIN_VALUE + " ; " + Long.MAX_VALUE + ")" )
+Long Value Range: (-9223372036854775808 ; 9223372036854775807)
+
+jshell> long longTest = 2_147_483_647;
+longTest ==> 2147483647
+
+jshell> long longTest = 2_147_483_647_234;
+|  Error:
+|  integer number too large
+|  long longTest = 2_147_483_647_234;
+|                  ^
+
+jshell> long longTest = 2_147_483_647_234L;
+longTest ==> 2147483647234
+
