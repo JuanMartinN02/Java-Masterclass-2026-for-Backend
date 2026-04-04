@@ -1,0 +1,55 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> System.out.print("Float Value Range: [" + Float.MIX_VALUE + " ; " + Float.MAX_VALUE + "]")
+|  Error:
+|  cannot find symbol
+|    symbol:   variable MIX_VALUE
+|  System.out.print("Float Value Range: [" + Float.MIX_VALUE + " ; " + Float.MAX_VALUE + "]")
+|                                            ^-------------^
+
+jshell> System.out.print("Float Value Range: [" + Float.MIN_VALUE + " ; " + Float.MAX_VALUE + "]")
+Float Value Range: [1.4E-45 ; 3.4028235E38]
+jshell> 
+
+jshell> System.out.print("Float Double Range: [" + Double.MIN_VALUE + " ; " + Double.MAX_VALUE + "]")
+Float Double Range: [4.9E-324 ; 1.7976931348623157E308]
+jshell> 
+
+jshell> int myInt = 5; float myFloat = 5f; double myDouble = 5d;
+myInt ==> 5
+myFloat ==> 5.0
+myDouble ==> 5.0
+
+jshell> /var
+|    int myInt = 5
+|    float myFloat = 5.0
+|    double myDouble = 5.0
+
+jshell> float myOtherFloatTest = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myOtherFloatTest = 5.25;
+|                           ^--^
+
+jshell> float myOtherFloatTest = 5.25f;
+myOtherFloatTest ==> 5.25
+
+jshell> float myOtherFloatTest = (float) 5.25f;
+myOtherFloatTest ==> 5.25
+
+jshell> float myOtherFloatTest = (float) 5.25;
+myOtherFloatTest ==> 5.25
+
+jshell> esto es con casting
+
+jshell> /var
+|    int myInt = 5
+|    float myFloat = 5.0
+|    double myDouble = 5.0
+|    float myOtherFloatTest = 5.25
+
+jshell> El double es la primitiva base para los floating points en Java!
+   ...> 
+
