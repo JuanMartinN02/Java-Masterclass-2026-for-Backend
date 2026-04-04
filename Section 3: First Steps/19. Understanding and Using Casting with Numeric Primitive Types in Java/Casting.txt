@@ -1,0 +1,46 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> byte myMinByte = Byte.MIN_VALUE, byte myMaxByte = Byte.MAX_VALUE;
+|  Error:
+|  <identifier> expected
+|  byte myMinByte = Byte.MIN_VALUE, byte myMaxByte = Byte.MAX_VALUE;
+|                                  ^
+
+jshell> byte myMinByte = Byte.MIN_VALUE, myMaxByte = Byte.MAX_VALUE;
+myMinByte ==> -128
+myMaxByte ==> 127
+
+jshell> byte myMinByte = Byte.MIN_VALUE, short myShortMax = Short.MAX_VALUE;
+|  Error:
+|  <identifier> expected
+|  byte myMinByte = Byte.MIN_VALUE, short myShortMax = Short.MAX_VALUE;
+|                                  ^
+
+jshell> byte myMinByte = Byte.MIN_VALUE; short myShortMax = Short.MAX_VALUE;
+myMinByte ==> -128
+myShortMax ==> 32767
+
+jshell> /var
+|    byte myMaxByte = 127
+|    byte myMinByte = -128
+|    short myShortMax = 32767
+
+jshell> byte myNewByteTest = (myMinByte / 2)
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  byte myNewByteTest = (myMinByte / 2);
+|                        ^-----------^
+
+jshell> byte myNewByteTest = (byte) (myMinByte / 2);
+myNewByteTest ==> -64
+
+jshell> byte myNewByteTest = (byte) (myShortMax / 2);
+myNewByteTest ==> -1
+
+jshell> 
+
+jshell> Lo corto de 16 bits a 8 y me dio el valor cortado (1111)
+
+
