@@ -1,0 +1,45 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> int myInt = 5; float myFloat = 5f; double myDouble = 5d;
+myInt ==> 5
+myFloat ==> 5.0
+myDouble ==> 5.0
+
+jshell> myIntValue = 5/2;
+|  Error:
+|  cannot find symbol
+|    symbol:   variable myIntValue
+|  myIntValue = 5/2;
+|  ^--------^
+
+jshell> myInt = 5/2;
+myInt ==> 2
+
+jshell> No se incluyen los decimales al ser un int
+
+jshell> myFloat = 5f/2f;
+myFloat ==> 2.5
+
+jshell> myFloat = 5f/3f;
+myFloat ==> 1.6666666
+
+jshell> myDouble = 5d/3d;
+myDouble ==> 1.6666666666666667
+
+jshell> myDouble = 5.00/3;
+myDouble ==> 1.6666666666666667
+
+jshell> myDouble = 5.00/3f;
+myDouble ==> 1.6666666666666667
+
+jshell> double PoundstoKg = 175d;
+PoundstoKg ==> 175.0
+
+jshell> double conversionConst = 0.45359237d;
+conversionConst ==> 0.45359237
+
+jshell> double inKg = PoundstoKg * conversionConst;
+inKg ==> 79.37866475
+
