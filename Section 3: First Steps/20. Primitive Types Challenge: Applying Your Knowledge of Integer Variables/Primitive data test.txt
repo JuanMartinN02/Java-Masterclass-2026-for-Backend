@@ -1,0 +1,18 @@
+jmart2@jmart2-A320M-HDV-R4-0:~$ jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> byte myByte = 20; short myShort = 2000; int myInt = -20000; long myLongTest = 50000 + 10*(myByte+myShort+myInt);
+myByte ==> 20
+myShort ==> 2000
+myInt ==> -20000
+myLongTest ==> -129800
+
+jshell> byte myByte = 20; short myShort = 2000; int myInt = -20000; long myLongTest = 50000L + 10L * (myByte+myShort+myInt);
+myByte ==> 20
+myShort ==> 2000
+myInt ==> -20000
+myLongTest ==> -129800
+
+jshell> 
+
