@@ -1,0 +1,51 @@
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\jmart2>jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myChar = 'DD';
+|  Error:
+|  unclosed character literal
+|  char myChar = 'DD';
+|                ^
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myUnicode = '\u0044';
+myUnicode ==> 'D'
+
+jshell> char mySimpleChar = '?'; char myUnicodeChar = '\u0049'; char myDecimalChar = 63
+mySimpleChar ==> '?'
+myUnicodeChar ==> 'I'
+myDecimalChar ==> '?'
+
+jshell> myUnicodeChar = '\u003F'
+myUnicodeChar ==> '?'
+
+jshell> /var
+|    char myChar = 'D'
+|    char myUnicode = 'D'
+|    char mySimpleChar = '?'
+|    char myUnicodeChar = '?'
+|    char myDecimalChar = '?'
+
+jshell>  bool boolTry = true;
+|  Error:
+|  cannot find symbol
+|    symbol:   class bool
+|   bool boolTry = true;
+|   ^--^
+
+jshell> boolean boolTry = true;
+boolTry ==> true
+
+jshell> boolean isLoggedIn = false;
+isLoggedIn ==> false
+
+jshell> Usar is en el nombre de un boolean es una practica comun para los booleans
