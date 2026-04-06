@@ -1,0 +1,40 @@
+C:\Users\jmart2>jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> A string is not a primitive data type, its a class of one or more chars.
+
+jshell> String myString = "This is a string";
+myString ==> "This is a string"
+
+jshell> System.out.println("My string is " + myString)
+;
+My string is This is a string
+
+jshell> myString = myString + " plus some more"
+myString ==> "This is a string plus some more"
+
+jshell> This is called concatenation, its adding characters to an existing string.
+
+jshell> myString = "I wish i had \u00241,000,000";
+myString ==> "I wish i had $1,000,000"
+
+jshell> { // This is a multiple line code in jshell
+   ...>     String myStatement = "This is a test";
+   ...>     System.out.println(myStatement + " " + myS
+tring);
+   ...> }
+This is a test I wish i had $1,000,000
+
+jshell> String stringNumber = "50"; int myInt = 50;
+stringNumber ==> "50"
+myInt ==> 50
+
+jshell> stringNumber = stringNumber + myInt;
+stringNumber ==> "5050"
+
+jshell> Converts the int into a string and concatenates it
+
+jshell> Strings are inmutable, they can't be changed. When you concatenate on a string, Java creates a new string and deletes the old one.
+
+jshell>
