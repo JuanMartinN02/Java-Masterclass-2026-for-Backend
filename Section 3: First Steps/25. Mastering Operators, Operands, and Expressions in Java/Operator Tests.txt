@@ -1,0 +1,45 @@
+C:\Users\jmart2>jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> int result = 3 * 6 // 3 * 6 = 18
+result ==> 18
+
+jshell> int previousResult = result;
+previousResult ==> 18
+
+jshell> int result = previous result / 9;
+|  Error:
+|  ';' expected
+|  int result = previous result / 9;
+|                       ^
+
+jshell> int result = previousResult / 9;
+result ==> 2
+
+jshell> System.out.println("previous result = " + previousResult)
+previous result = 18
+
+jshell> char firstChar = 'A'; char secondChar = 'B'
+firstChar ==> 'A'
+secondChar ==> 'B'
+
+jshell> System.out.println(firstChar + secondChar)
+131
+
+jshell> Se suman los valores numericos de los characters
+
+jshell> System.out.println("" + firstChar + secondChar
+)
+AB
+
+jshell> Creando un empty string, ahora los chars se agregan a este string
+
+jshell> int remainder = 10 % 5;
+remainder ==> 0
+
+jshell> int remainder = 10 % 3;
+remainder ==> 1
+
+jshell> int remainder = 5 % 3;
+remainder ==> 2
