@@ -1,0 +1,84 @@
+C:\Users\jmart2>jshell
+|  Welcome to JShell -- Version 17.0.18
+|  For an introduction type: /help intro
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result += 15 / 3;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 15
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 15;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = -5
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 4
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = result - 5.5;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|      result = result - 5.5;
+|               ^----------^
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = (int) (result - 5.5)};
+   ...>     System.out.println("Result = " + result);
+   ...> }
+|  Error:
+|  ';' expected
+|      result = (int) (result - 5.5)}
+|                                   ^
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = (int) (result - 5.5);
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 4
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = (double) (result - 5.5);
+   ...>     System.out.println("Result = " + result);
+   ...> }
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|      result = (double) (result - 5.5);
+|               ^---------------------^
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 4.5
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result *= 5.5;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 55.0
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result /= 5.5;
+   ...>     System.out.println("Result = " + result);
+   ...> }
+Result = 1.8181818181818181
+
+jshell>
