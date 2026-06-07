@@ -11,9 +11,9 @@ public abstract class ListItem {
 
     protected abstract ListItem previous();
 
-    protected abstract ListItem setNext(int value);
+    protected abstract ListItem setNext(ListItem item);
 
-    protected abstract ListItem setPrevious(int value);
+    protected abstract ListItem setPrevious(ListItem listItem);
 
     protected abstract int compareTo(ListItem listItem);
 

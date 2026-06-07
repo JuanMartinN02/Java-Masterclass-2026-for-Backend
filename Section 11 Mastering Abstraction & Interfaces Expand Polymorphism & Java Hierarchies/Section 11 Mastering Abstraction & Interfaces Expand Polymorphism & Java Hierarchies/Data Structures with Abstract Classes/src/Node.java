@@ -16,14 +16,14 @@ public class Node extends ListItem{
     }
 
     @Override
-    protected ListItem setNext(int value) {
-        this.rightLink.setValue(value);
+    protected ListItem setNext(ListItem item) {
+        this.rightLink = item;
         return this.rightLink;
     }
 
     @Override
-    protected ListItem setPrevious(int value) {
-        this.leftLink.setValue(value);
+    protected ListItem setPrevious(ListItem item) {
+        this.leftLink = item;
         return this.leftLink;
     }
 
